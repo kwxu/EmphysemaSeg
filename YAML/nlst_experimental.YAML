@@ -1,0 +1,9 @@
+
+data_dir: "/nfs/masi/xuk9/Projects/ChestExtrapolation/LobeSeg/Experimental/data/nifti" # all files in this dir with a *.nii.gz format will be processed
+seg_dir: "/nfs/masi/xuk9/Projects/ChestExtrapolation/LobeSeg/Experimental/seg" # label map outputs. two channel if --emp was specified
+clip_dir: "/nfs/masi/xuk9/Projects/ChestExtrapolation/LobeSeg/Experimental/clip" # visualizations of segmentation results if --vis was specified
+model_path: "/nfs/masi/xuk9/src/EmphysemaSeg/Model/0911_TS_best_model.pth"
+pix_dim: !!python/tuple [1, 1, 1] 
+window: !!python/tuple [-1024, 600]
+num_workers: 8
+reg_resample: "/home/local/VANDERBILT/xuk9/src/niftyreg/build_masi/reg-apps/reg_resample"
